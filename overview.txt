@@ -1,0 +1,99 @@
+Ferramenta usada no projeto. 
+Notebook colab.
+Python 
+
+
+
+# Bibliotecas usadas no projeto. 
+
+!pip install pandas-profiling==2.7.1
+
+import pandas as pd
+import numpy as np
+import seaborn as sns 
+import matplotlib.pyplot as plt 
+
+
+
+from pandas_profiling import ProfileReport
+from sklearn.model_selection import train_test_split 
+from sklearn.preprocessing import MinMaxScaler 
+from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor, ExtraTreesRegressor, GradientBoostingRegressor 
+from sklearn.linear_model import HuberRegressor, SGDRegressor
+from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error   
+from sklearn.model_selection import GridSearchCV
+
+
+#O algoritmo Gradient Boosting Regression é usado para ajustar o modelo que prevê o valor contínuo.
+
+GradientBoostingRegressor()
+
+
+#Local de importação do Dataset 
+
+
+pasta_raiz = "/content/drive/MyDrive/Colab Notebooks/Day_06/"
+
+
+modelos  selecionado o 'Gradient Boosting Regressor'.
+
+
+Timelog Sugerido.
+
+União de Tabelas.
+EDA.
+Tratamento de Dados.
+Analise Micro
+Separação de 20% do Micro
+Treinamento padrão. 
+Definição de Modelo.
+Hyperparametrização.
+Treinar Modelo Macro 
+Analise dos Resultados.
+Softcheck.
+
+
+---------------------
+Dataset statistics
+
+Number of variables	16
+Number of observations	421570
+Missing cells	0
+Missing cells (%)	0.0%
+Duplicate rows	0
+Duplicate rows (%)	0.0%
+Total size in memory	118.5 MiB
+Average record size in memory	294.7 B
+Variable types
+
+NUM	13
+CAT	2
+BOOL	1
+
+--------------------------------------------
+Reproduction
+
+Analysis started	2021-10-16 18:45:20.837819
+Analysis finished	2021-10-16 18:45:25.750784
+Duration	4.91 seconds
+Version	pandas-profiling v2.7.1
+Command line	pandas_profiling --config_file config.yaml [YOUR_FILE.csv]
+Download configuration	config.yaml
+
+------------------------------------------------------------------------------
+
+Date has a high cardinality: 143 distinct values	High cardinality
+MarkDown1 has 270889 (64.3%) zeros	Zeros
+MarkDown2 has 310529 (73.7%) zeros	Zeros
+MarkDown3 has 284546 (67.5%) zeros	Zeros
+MarkDown4 has 286603 (68.0%) zeros	Zeros
+MarkDown5 has 270138 (64.1%) zeros	Zeros
+----------------------------------------------------------------------
+
+
+
+
+
+
+
